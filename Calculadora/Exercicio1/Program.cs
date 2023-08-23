@@ -12,7 +12,7 @@ class Program
 
         decimal novoSalario = salario + abono;
         
-        Console.WriteLine($"\nNovo salário: R$ {novoSalario}");
+        Console.WriteLine($"\nNovo salário: {novoSalario.ToString("C")}");
     }
 }
 
