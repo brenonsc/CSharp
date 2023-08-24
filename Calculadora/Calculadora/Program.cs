@@ -15,8 +15,12 @@ class Program
         Console.WriteLine($"\nOperações\n{numero1} + {numero2} = {numero1 + numero2}");
         Console.WriteLine($"{numero1} - {numero2} = {numero1 - numero2}");
         Console.WriteLine($"{numero1} * {numero2} = {numero1 * numero2}");
-        Console.WriteLine($"{numero1} / {numero2} = {Math.Round((numero1/numero2),2)}");
-        Console.WriteLine($"{numero1} % {numero2} = {numero1 % numero2}");
+        
+        if(numero2 > 0)
+            Console.WriteLine($"{numero1} / {numero2} = {Math.Round((numero1/numero2),2)}");
+        else
+            Console.WriteLine($"{numero1} / {numero2} = Não é possível dividir por zero");
+        
         Console.WriteLine($"{numero1} ^ {numero2} = {Math.Pow(numero1,numero2)}");
         Console.WriteLine($"Raiz quadrada de {numero1} = {Math.Sqrt(numero1)}");
         Console.WriteLine($"Raiz quadrada de {numero2} = {Math.Sqrt(numero2)}");
