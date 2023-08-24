@@ -4,6 +4,6 @@ Esse repositório foi criado com o objetivo de armazenar todos os projetos criad
 
 ##### Aqui contém:
 
-- [Hello World!](https://github.com/brenonsc/CSharp.Generation/tree/main/HelloWorld) :wave:
-- [Calculadora](https://github.com/brenonsc/CSharp.Generation/tree/main/Calculadora) *️⃣
-- [Plano de Saúde](https://github.com/brenonsc/CSharp.Generation/tree/main/PlanoDeSaude) :hospital:
+- :wave: [Hello World!](https://github.com/brenonsc/CSharp.Generation/tree/main/HelloWorld)
+- *️⃣ [Calculadora](https://github.com/brenonsc/CSharp.Generation/tree/main/Calculadora)
+- :hospital: [Plano de Saúde](https://github.com/brenonsc/CSharp.Generation/tree/main/PlanoDeSaude)
