@@ -21,16 +21,16 @@ class Program
         switch (operacao)
         {
             case 1:
-                Console.WriteLine($"\n{n1} + {n2} = {n1 + n2}");
+                Console.WriteLine($"\n{n1} + {n2} = {(n1 + n2).ToString("F1")}");
                 break;
             case 2:
-                Console.WriteLine($"\n{n1} - {n2} = {n1 - n2}");
+                Console.WriteLine($"\n{n1} - {n2} = {(n1 - n2).ToString("F1")}");
                 break;
             case 3:
-                Console.WriteLine($"\n{n1} * {n2} = {n1 * n2}");
+                Console.WriteLine($"\n{n1} * {n2} = {(n1 * n2).ToString("F1")}");
                 break;
             case 4:
-                Console.WriteLine($"\n{n1} / {n2} = {n1 / n2}");
+                Console.WriteLine($"\n{n1} / {n2} = {(n1 / n2).ToString("F1")}");
                 break;
             default:
                 Console.WriteLine("\nOperação inválida!");
