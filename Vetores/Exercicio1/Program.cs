@@ -15,4 +15,3 @@ class Program
             Console.Write($"\nO número {numero} está na posição {Array.IndexOf(vetor, numero)} do vetor.");
     }
 }
-
