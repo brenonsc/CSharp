@@ -42,8 +42,15 @@ class Program
                     }
                     break;
                 case 3:
-                    Console.Write($"\nRetirando o livro: {pilhaLivros.Peek()}!!!\n");
-                    pilhaLivros.Pop();
+                    if (pilhaLivros.Count == 0)
+                    {
+                        Console.Write("\nNão há livros na pilha!!!\n");
+                    }
+                    else
+                    {
+                        Console.Write($"\nRetirando o livro: {pilhaLivros.Peek()}!!!\n");
+                        pilhaLivros.Pop();
+                    }
                     break;
                 case 0:
                     Console.Write("\nEncerrando o sistema...");

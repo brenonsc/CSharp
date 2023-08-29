@@ -42,8 +42,16 @@ class Program
                     }
                     break;
                 case 3:
-                    Console.Write($"\nChamando o cliente: {filaClientes.Peek()}!!!\n");
-                    filaClientes.Dequeue();
+                    if(filaClientes.Count == 0)
+                    {
+                        Console.Write("\nNão há clientes na fila!!!\n");
+                        break;
+                    }
+                    else
+                    {
+                        Console.Write($"\nChamando o cliente: {filaClientes.Peek()}!!!\n");
+                        filaClientes.Dequeue();
+                    }
                     break;
                 case 0:
                     Console.Write("\nEncerrando o sistema...");
