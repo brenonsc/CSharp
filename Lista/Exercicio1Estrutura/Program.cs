@@ -24,7 +24,7 @@ class Program
                 case 1:
                     Console.Write("\nDigite o nome do cliente: ");
                     filaClientes.Enqueue(Console.ReadLine());
-                    Console.Write("\nCliente adicionado com sucesso!!!\n");
+                    Console.Write("Cliente adicionado com sucesso!!!\n");
                     break;
                 case 2:
                     if(filaClientes.Count == 0)
