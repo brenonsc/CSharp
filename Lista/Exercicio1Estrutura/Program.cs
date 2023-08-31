@@ -7,7 +7,7 @@ class Program
         Queue<string> filaClientes = new Queue<string>();
         int opcao = 0;
 
-        do
+        do 
         {
             Console.Write("\n***********************************************");
             Console.Write("\n\n\t1 - Adicionar cliente na fila\t\n");
