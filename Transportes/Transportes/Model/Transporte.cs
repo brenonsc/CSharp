@@ -25,6 +25,6 @@ public class Transporte
         Console.WriteLine("******************************");
         Console.WriteLine("     Dados do Transporte      ");
         Console.WriteLine("******************************");
-        Console.WriteLine($"Capacidade: {this.capacidade}");
+        Console.WriteLine($"Capacidade: {this.capacidade} pessoas");
     }
 }

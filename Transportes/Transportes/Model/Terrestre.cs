@@ -36,6 +36,6 @@ public class Terrestre : Transporte
     {
         base.Visualizar();
         Console.WriteLine("Número de rodas: " + this.rodas);
-        Console.WriteLine("Velocidade máxima: " + this.velocidadeMaxima);
+        Console.WriteLine("Velocidade máxima: " + this.velocidadeMaxima + " km/h");
     }
 }
