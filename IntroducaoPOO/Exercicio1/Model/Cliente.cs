@@ -70,15 +70,14 @@ public class Cliente
     }
     
     //Métodos da Classe
-    public void Visualizar()
+    public virtual void Visualizar()
     {
         Console.WriteLine($"\nCliente {this.id}\n" +
                           "********************************" +
-                          "\nNome: " + this.nome + 
-                          "\nEndereço: " + this.endereco + 
-                          "\nE-mail: " + this.email + 
-                          "\nTelefone: " + FormataTelefone(this.telefone) +
-                          "\n********************************");
+                          "\nNome: " + this.nome +
+                          "\nEndereço: " + this.endereco +
+                          "\nE-mail: " + this.email +
+                          "\nTelefone: " + FormataTelefone(this.telefone));
     }
     
     static string FormataTelefone(string number) 
