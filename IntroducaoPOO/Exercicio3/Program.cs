@@ -9,15 +9,15 @@ class Program
         Console.Write("BEM-VINDO AO SISTEMA DE VISUALIZAÇÃO DE JOGOS DA BRENO GAMES\n" +
                       "*************************************************************");
         
-        Jogo j1 = new Jogo("The Last of Us Part II", "PlayStation 4", "Ação e Aventura", 93, "Naughty Dog");
-        Jogo j2 = new Jogo("God of War", "PlayStation 4", "Ação e Aventura", 94, "Santa Monica Studio");
-        Jogo j3 = new Jogo("The Witcher 3: Wild Hunt", "PlayStation 4, Xbox One, Nintendo Switch, PC", "RPG", 92, "CD Projekt Red");
-        Jogo j4 = new Jogo("Red Dead Redemption 2", "PlayStation 4, Xbox One, PC", "Ação e Aventura", 97, "Rockstar Games");
+        Jogo p1 = new Jogo(1,"The Last of Us Part II", "\"The Last of Us Part II\" é um jogo de ação pós-apocalíptico estrelado por Ellie, focado em vingança e sobrevivência.", 200,10,"PlayStation 4", "Ação e Aventura", 93, "Naughty Dog");
+        Jogo p2 = new Jogo(2,"God of War", "\"God of War\" (PS4) é um jogo de ação nórdica com Kratos e seu filho, combinando história emocional e combate impressionante.", 100, 4, "PlayStation 4", "Ação e Aventura", 94, "Santa Monica Studio");
+        VideoGame p3 = new VideoGame(3, "PlayStation 4", "Console PlayStation 4 Slim 1TB Hits Bundle", 2000, 25, "Sony", false);
+        VideoGame p4 = new VideoGame(4, "Xbox Series X", "Console Xbox Series X 1TB", 4500, 10, "Microsoft", false);
         
-        j1.Visualizar();
-        j2.Visualizar();
-        j3.Visualizar();
-        j4.Visualizar();
+        p1.Visualizar();
+        p2.Visualizar();
+        p3.Visualizar();
+        p4.Visualizar();
     }
 }
 

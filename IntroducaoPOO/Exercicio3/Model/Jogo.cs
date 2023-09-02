@@ -1,17 +1,15 @@
 namespace Exercicio3.Model;
 
-public class Jogo
+public class Jogo : Produto
 {
-    private string titulo = string.Empty;
     private string plataformas = string.Empty;
     private string genero = string.Empty;
     private int notaMetacritic;
     private string desenvolvedora = string.Empty;
     
     //Método Construtor
-    public Jogo(string titulo, string plataformas, string genero, int notaMetacritic, string desenvolvedora)
+    public Jogo(int id, string nome, string descricao, decimal preco, int estoque, string plataformas, string genero, int notaMetacritic, string desenvolvedora) : base(id, nome, descricao, preco, estoque)
     {
-        this.titulo = titulo;
         this.plataformas = plataformas;
         this.genero = genero;
         this.notaMetacritic = notaMetacritic;
@@ -19,16 +17,6 @@ public class Jogo
     }
     
     //Métodos Getters e Setters
-    public string GetTitulo()
-    {
-        return titulo;
-    }
-    
-    public void SetTitulo(string titulo)
-    {
-        this.titulo = titulo;
-    }
-    
     public string GetPlataformas()
     {
         return plataformas;
@@ -69,15 +57,14 @@ public class Jogo
         this.desenvolvedora = desenvolvedora;
     }
     
-    //Método para visualizar os dados do jogo
-    public void Visualizar()
+    //Método para visualizar os dados do Jogo
+    public override void Visualizar()
     {
-        Console.WriteLine($"\n\n{this.titulo.ToUpper()}\n" +
-                          "*************************************************************" +
-                          "\nPlataformas: " + this.plataformas + 
-                          "\nGênero: " + this.genero +
-                          "\nNota Metacritic: " + this.notaMetacritic +
-                          "\nDesenvolvedora: " + this.desenvolvedora +
-                          "\n*************************************************************");
+        base.Visualizar();
+        Console.WriteLine($"Plataformas: {plataformas}\n" +
+                          $"Gênero: {genero}\n" +
+                          $"Nota Metacritic: {notaMetacritic}\n" +
+                          $"Desenvolvedora: {desenvolvedora}\n" +
+                          "*************************************************************");
     }
 }
