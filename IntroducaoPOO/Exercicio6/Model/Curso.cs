@@ -70,14 +70,13 @@ public class Curso
     }
 
     //Método para visualizar os dados do curso
-    public void Visualizar()
+    public virtual void Visualizar()
     {
         Console.WriteLine($"\n{titulo.ToUpper()}\n" +
                           "*********************************************************************************************************************************************************\n" +
                           $"Descrição: {descricao}\n" +
                           $"Duração: {duracao} horas\n" +
                           $"Data início: {dataInicio}\n" +
-                          $"Valor: {valor.ToString("C")}" +
-                          "\n*********************************************************************************************************************************************************");
+                          $"Valor: {valor.ToString("C")}");
     }
 }
