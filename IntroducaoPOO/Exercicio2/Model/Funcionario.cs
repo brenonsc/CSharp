@@ -70,7 +70,7 @@ public class Funcionario
     }
     
     //Métodos da classe
-    public void Visualizar()
+    public virtual void Visualizar()
     {
         string cargo = string.Empty;
 
@@ -80,12 +80,15 @@ public class Funcionario
                 cargo = "Estagiário";
                 break;
             case 2:
-                cargo = "Analista";
+                cargo = "Vendedor";
                 break;
             case 3:
-                cargo = "Gerente";
+                cargo = "Analista";
                 break;
             case 4:
+                cargo = "Gerente";
+                break;
+            case 5:
                 cargo = "Diretor";
                 break;
         }
@@ -95,7 +98,6 @@ public class Funcionario
                           "\nNome: " + this.nome + 
                           "\nCargo: " + cargo + 
                           "\nSalário: " + this.salario.ToString("C") + 
-                          "\nData de Admissão: " + this.dataAdmissao +
-                          "\n********************************");
+                          "\nData de Admissão: " + this.dataAdmissao);
     }
 }
