@@ -6,16 +6,16 @@ public class Ingresso
     private string evento = string.Empty;
     private int id;
     private string local = string.Empty;
-    private decimal preco;
+    private string setor = string.Empty;
 
     //Método Construtor
-    public Ingresso(int id, string evento, string local, DateTime dataHora, decimal preco)
+    public Ingresso(int id, string evento, string local, DateTime dataHora, string setor)
     {
         this.id = id;
         this.evento = evento;
         this.local = local;
         this.dataHora = dataHora;
-        this.preco = preco;
+        this.setor = setor;
     }
 
     //Métodos Getters e Setters
@@ -59,26 +59,25 @@ public class Ingresso
         this.dataHora = dataHora;
     }
 
-    public decimal GetPreco()
+    public string GetSetor()
     {
-        return preco;
+        return setor;
     }
 
-    public void SetPreco(decimal preco)
+    public void SetSetor(string setor)
     {
-        this.preco = preco;
+        this.setor = setor;
     }
 
     //Método Visualizar
-    public void Visualizar()
+    public virtual void Visualizar()
     {
         Console.WriteLine("\nDados do Ingresso\n" +
                           "***************************************************\n" +
-                          $"ID: {id}\n" +
-                          $"Evento: {evento}\n" +
-                          $"Local: {local}\n" +
-                          $"Data e Hora: {dataHora.ToString("f")}\n" +
-                          $"Preço: {preco.ToString("C")}" +
-                          "\n***************************************************");
+                          $"ID: {this.id}\n" +
+                          $"Evento: {this.evento}\n" +
+                          $"Local: {this.local}\n" +
+                          $"Data e Hora: {this.dataHora.ToString("f")}\n" +
+                          $"Setor: {this.setor}");
     }
 }
