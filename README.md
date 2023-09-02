@@ -11,5 +11,5 @@ Esse repositório foi criado com o objetivo de armazenar todos os projetos criad
 - :koko: [Vetores](https://github.com/brenonsc/CSharp.Generation/tree/main/Vetores)
 - :books: [Lista](https://github.com/brenonsc/CSharp.Generation/tree/main/Lista)
 - :zap: [Métodos](https://github.com/brenonsc/CSharp.Generation/tree/main/Metodos)
-- :memo: [Iniciação a POO](https://github.com/brenonsc/CSharp.Generation/tree/main/IntroducaoPOO)
+- :memo: [Introdução a POO](https://github.com/brenonsc/CSharp.Generation/tree/main/IntroducaoPOO)
 - :car: [Transportes](https://github.com/brenonsc/CSharp.Generation/tree/main/Transportes)
