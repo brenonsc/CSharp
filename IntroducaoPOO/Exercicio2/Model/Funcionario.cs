@@ -2,12 +2,12 @@ namespace Exercicio2.Model;
 
 public class Funcionario
 {
+    private int cargo;
+    private DateOnly dataAdmissao;
     private int id;
     private string nome = string.Empty;
-    private int cargo;
     private decimal salario;
-    private DateOnly dataAdmissao;
-    
+
     //Método Construtor
     public Funcionario(int id, string nome, int cargo, decimal salario, DateOnly dataAdmissao)
     {
@@ -17,62 +17,62 @@ public class Funcionario
         this.salario = salario;
         this.dataAdmissao = dataAdmissao;
     }
-    
+
     //Métodos Getters e Setters
     public int GetId()
     {
         return id;
     }
-    
+
     public void SetId(int id)
     {
         this.id = id;
     }
-    
+
     public string GetNome()
     {
         return nome;
     }
-    
+
     public void SetNome(string nome)
     {
         this.nome = nome;
     }
-    
+
     public int GetCargo()
     {
         return cargo;
     }
-    
+
     public void SetCargo(int cargo)
     {
         this.cargo = cargo;
     }
-    
+
     public decimal GetSalario()
     {
         return salario;
     }
-    
+
     public void SetSalario(decimal salario)
     {
         this.salario = salario;
     }
-    
+
     public DateOnly GetDataAdmissao()
     {
         return dataAdmissao;
     }
-    
+
     public void SetDataAdmissao(DateOnly dataAdmissao)
     {
         this.dataAdmissao = dataAdmissao;
     }
-    
+
     //Métodos da classe
     public virtual void Visualizar()
     {
-        string cargo = string.Empty;
+        var cargo = string.Empty;
 
         switch (this.cargo)
         {
@@ -92,12 +92,12 @@ public class Funcionario
                 cargo = "Diretor";
                 break;
         }
-        
-        Console.WriteLine($"\nFuncionário {this.id}\n" +
+
+        Console.WriteLine($"\nFuncionário {id}\n" +
                           "********************************" +
-                          "\nNome: " + this.nome + 
-                          "\nCargo: " + cargo + 
-                          "\nSalário: " + this.salario.ToString("C") + 
-                          "\nData de Admissão: " + this.dataAdmissao);
+                          "\nNome: " + nome +
+                          "\nCargo: " + cargo +
+                          "\nSalário: " + salario.ToString("C") +
+                          "\nData de Admissão: " + dataAdmissao);
     }
 }

@@ -2,82 +2,81 @@ namespace Exercicio4.Model;
 
 public class Farmacia
 {
+    private int id;
     private string nome = string.Empty;
-    private string principioAtivo = string.Empty;
-    private string laboratorio = string.Empty;
+    private string descricao = string.Empty;
     private decimal preco;
-    private string dosagem = string.Empty;
-    
+    private int estoque;
+
     //Método Construtor
-    public Farmacia(string nome, string principioAtivo, string laboratorio, decimal preco, string dosagem)
+    public Farmacia(int id, string nome, string descricao, decimal preco, int estoque)
     {
+        this.id = id;
         this.nome = nome;
-        this.principioAtivo = principioAtivo;
-        this.laboratorio = laboratorio;
+        this.descricao = descricao;
         this.preco = preco;
-        this.dosagem = dosagem;
+        this.estoque = estoque;
     }
-    
+
     //Métodos Getters e Setters
+    public int GetId()
+    {
+        return id;
+    }
+
+    public void SetId(int id)
+    {
+        this.id = id;
+    }
+
     public string GetNome()
     {
         return nome;
     }
-    
+
     public void SetNome(string nome)
     {
         this.nome = nome;
     }
-    
-    public string GetPrincipioAtivo()
+
+    public string GetDescricao()
     {
-        return principioAtivo;
+        return descricao;
     }
-    
-    public void SetPrincipioAtivo(string principioAtivo)
+
+    public void SetDescricao(string descricao)
     {
-        this.principioAtivo = principioAtivo;
+        this.descricao = descricao;
     }
-    
-    public string GetLaboratorio()
-    {
-        return laboratorio;
-    }
-    
-    public void SetLaboratorio(string laboratorio)
-    {
-        this.laboratorio = laboratorio;
-    }
-    
+
     public decimal GetPreco()
     {
         return preco;
     }
-    
+
     public void SetPreco(decimal preco)
     {
         this.preco = preco;
     }
-    
-    public string GetDosagem()
+
+    public int GetEstoque()
     {
-        return dosagem;
+        return estoque;
     }
-    
-    public void SetDosagem(string dosagem)
+
+    public void SetEstoque(int estoque)
     {
-        this.dosagem = dosagem;
+        this.estoque = estoque;
     }
-    
+
     //Método para visualizar os dados
-    public void Visualizar()
+    public virtual void Visualizar()
     {
-        Console.WriteLine($"\n{this.nome.ToUpper()}\n" +
+        Console.WriteLine($"\n{nome.ToUpper()}\n" +
                           "************************************" +
-                          "\nPrincípio Ativo: " + this.principioAtivo + 
-                          "\nLaboratório: " + this.laboratorio + 
-                          "\nDosagem: " + this.dosagem +
-                          "\nPreço: " + this.preco.ToString("C") + 
-                          "\n************************************");
+                          "\nID: " + id +
+                          "\nDescrição: " + descricao +
+                          "\nPreço: " + preco.ToString("C") +
+                          "\nEstoque: " + estoque);
     }
 }

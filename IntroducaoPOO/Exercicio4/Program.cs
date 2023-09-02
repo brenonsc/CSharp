@@ -2,18 +2,21 @@
 
 namespace Exercicio4;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         Console.WriteLine("BEM-VINDO AO SISTEMA DE VISUALIZAÇÃO DE REMÉDIOS\n" +
                           "******************************************************");
-        
-        Farmacia r1 = new Farmacia("Dipirona", "Dipirona Sódica", "EMS", 10.00m, "500mg");
-        Farmacia r2 = new Farmacia("Paracetamol", "Paracetamol", "EMS", 5.00m, "500mg");
-        
-        r1.Visualizar();
-        r2.Visualizar();
+
+        var f1 = new Medicamento(1, "Dipirona", "Analgésico", 5.50m, 100, "500mg", "EMS");
+        var f2 = new Medicamento(2, "Paracetamol", "Analgésico", 4.50m, 100, "500mg", "EMS");
+        var f3 = new Perfumaria(3, "Shampoo", "Cabelo", 10.00m, 100, "Pantene", "Coco");
+        var f4 = new Perfumaria(4, "Condicionador", "Cabelo", 10.00m, 100, "Pantene", "Coco");
+
+        f1.Visualizar();
+        f2.Visualizar();
+        f3.Visualizar();
+        f4.Visualizar();
     }
 }
-
