@@ -18,6 +18,8 @@
                 Console.Error.WriteLine("\nExceção: " + e);
                 Console.WriteLine("\nPosição Inválida");
             }
+
+            throw new ExcecaoSimples("Exceção simples");
         }
     }
 }
