@@ -14,4 +14,4 @@ Esse repositório foi criado com o objetivo de armazenar todos os projetos criad
 - :memo: [Introdução a POO](https://github.com/brenonsc/CSharp.Generation/tree/main/IntroducaoPOO)
 - :car: [Transportes](https://github.com/brenonsc/CSharp.Generation/tree/main/Transportes)
 - :swimmer: [Triatleta](https://github.com/brenonsc/CSharp.Generation/tree/main/Triatleta)
-- 
+- :x: [Tratamento de Exceções](https://github.com/brenonsc/CSharp.Generation/tree/main/Exceptions)
