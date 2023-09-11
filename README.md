@@ -13,6 +13,6 @@ Esse repositório foi criado com o objetivo de armazenar todos os projetos criad
 - :zap: [Métodos](https://github.com/brenonsc/CSharp.Generation/tree/main/Metodos)
 - :memo: [Introdução a POO](https://github.com/brenonsc/CSharp.Generation/tree/main/IntroducaoPOO)
 - :car: [Transportes (Herança)](https://github.com/brenonsc/CSharp.Generation/tree/main/Transportes)
-- :swimmer: [Triatleta (Herança)](https://github.com/brenonsc/CSharp.Generation/tree/main/Triatleta)
+- :swimmer: [Triatleta (Interfaces)](https://github.com/brenonsc/CSharp.Generation/tree/main/Triatleta)
 - :x: [Tratamento de Exceções](https://github.com/brenonsc/CSharp.Generation/tree/main/Exceptions)
 - :bar_chart: [Lambda e Linq](https://github.com/brenonsc/CSharp.Generation/tree/main/Lambda)
