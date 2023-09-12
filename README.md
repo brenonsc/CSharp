@@ -16,3 +16,4 @@ Esse repositório foi criado com o objetivo de armazenar todos os projetos criad
 - :swimmer: [Triatleta (Interfaces)](https://github.com/brenonsc/CSharp.Generation/tree/main/Triatleta)
 - :x: [Tratamento de Exceções](https://github.com/brenonsc/CSharp.Generation/tree/main/Exceptions)
 - :bar_chart: [Lambda e Linq](https://github.com/brenonsc/CSharp.Generation/tree/main/Lambda)
+- :hospital: [Farmácia (Projeto Revisão)](https://github.com/brenonsc/CSharp.Generation/tree/main/Farmacia)
